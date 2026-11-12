@@ -1,0 +1,27 @@
+html, body { margin: 0; height: 100%; overflow: hidden; background: #cfe3ef; font-family: Georgia, 'Times New Roman', serif; }
+canvas { display: block; }
+#loading {
+  position: fixed; inset: 0; z-index: 20; display: flex; flex-direction: column; align-items: center; justify-content: center;
+  background: radial-gradient(circle at 50% 40%, #2b3a2c, #11170f); color: #efe3c0; transition: opacity .7s;
+}
+#loading.done { opacity: 0; pointer-events: none; }
+#loading h1 { font-size: clamp(32px, 7vw, 64px); letter-spacing: .08em; margin: 0 0 8px; text-shadow: 0 2px 12px #000; }
+#loading p { margin: 0 0 18px; opacity: .8; }
+.track { width: min(320px, 70vw); height: 6px; background: #ffffff22; border-radius: 3px; overflow: hidden; }
+#bar { height: 100%; width: 0; background: #d8b24a; transition: width .15s; }
+#hud {
+  position: fixed; left: 14px; top: 12px; z-index: 10; color: #fff; text-shadow: 0 1px 4px #000a; font-size: 14px;
+  background: #0006; padding: 10px 14px; border-radius: 8px; max-width: 80vw; transition: opacity 1.5s; pointer-events: none;
+}
+#hud.fade { opacity: .25; }
+#hud .help span { display: block; opacity: .9; margin-top: 4px; font-size: 12.5px; }
+kbd { background: #fff2; border-radius: 3px; padding: 0 4px; }
+#info { opacity: .8; font-size: 12px; margin-top: 2px; font-family: monospace; }
+/* Botón ENTER VR (generado por three.js) */
+#VRButton {
+  position: fixed !important; bottom: 24px !important; left: 50% !important; transform: translateX(-50%);
+  padding: 14px 28px !important; font: 700 18px Georgia, serif !important; letter-spacing: .12em;
+  background: #7a1f1f !important; color: #fbeec6 !important; border: 2px solid #d8b24a !important; border-radius: 10px !important;
+  box-shadow: 0 4px 18px #0008; z-index: 30 !important; opacity: .95 !important; width: auto !important; cursor: pointer;
+}
+#VRButton:hover { background: #962727 !important; }

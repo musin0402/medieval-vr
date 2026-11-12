@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Reinos Perdidos · Mundo medieval WebXR</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <div id="loading">
+    <h1>Reinos Perdidos</h1>
+    <p>Forjando el mundo…</p>
+    <div class="track"><div id="bar"></div></div>
+  </div>
+  <div id="hud">
+    <b>Reinos Perdidos</b>
+    <div id="info"></div>
+    <div class="help">
+      <span><kbd>WASD</kbd> mover · <kbd>Shift</kbd> correr · ratón mirar · clic espada</span>
+      <span>VR: stick izq. mover (pulsar = correr) · stick der. girar · <b>ENTER VR</b> abajo</span>
+    </div>
+  </div>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
